@@ -7,7 +7,7 @@ helm:
     value: 683123961003.dkr.ecr.ap-south-1.amazonaws.com/users
     forcestring: false
   - name: image.tag
-    value: 0.1.2
+    value: 0.1.1
     forcestring: true
   - name: livenessProbe.httpGet.path
     value: /healthz

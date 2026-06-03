@@ -1,0 +1,21 @@
+---
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: payments-prod-imageupdater
+  namespace: argocd
+spec:
+  commonUpdateSettings:
+    updateStrategy: semver
+    forceUpdate: false
+  writeBackConfig:
+    method: "git" 
+  applicationRefs:
+    - namePattern: "payments-prod"
+      images:
+        - alias: "payments"
+          imageName: "683123961003.dkr.ecr.ap-south-1.amazonaws.com/payments:v0.1.x"
+          #commonUpdateSettings:
+             #ignoreTags: 
+                #- "*"
+

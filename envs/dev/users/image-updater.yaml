@@ -9,12 +9,12 @@ spec:
     updateStrategy: semver
     forceUpdate: false
   writeBackConfig:
-    method: "git" 
+    method: git
   applicationRefs:
-    - namePattern: "users-dev"
-      images:
-        - alias: "users"
-          imageName: "683123961003.dkr.ecr.ap-south-1.amazonaws.com/users:v0.1.x"
-          #commonUpdateSettings:
-             #ignoreTags: 
-                #- "*"
+  - namePattern: users-dev
+    images:
+    - alias: users
+      imageName: 683123961003.dkr.ecr.ap-south-1.amazonaws.com/users:v0.1.x
+      commonUpdateSettings:
+        ignoreTags:
+        - '*'

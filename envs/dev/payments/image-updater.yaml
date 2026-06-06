@@ -15,6 +15,3 @@ spec:
     images:
     - alias: payments
       imageName: 683123961003.dkr.ecr.ap-south-1.amazonaws.com/payments:v0.1.x
-      commonUpdateSettings:
-        ignoreTags:
-        - '*'

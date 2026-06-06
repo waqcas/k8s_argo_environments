@@ -15,3 +15,6 @@ spec:
     images:
     - alias: users
       imageName: 683123961003.dkr.ecr.ap-south-1.amazonaws.com/users:v0.1.x
+      commonUpdateSettings:
+        ignoreTags:
+        - '*'

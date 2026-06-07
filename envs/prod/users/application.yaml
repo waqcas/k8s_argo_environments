@@ -23,7 +23,7 @@ spec:
       - name: readinessProbe.httpGet.path
         value: /healthz
       - name: image.tag
-        value: 0.1.4
+        value: 0.1.6
     path: helm-charts/users
     repoURL: git@github.com:waqcas/k8s_argo_environments.git
     targetRevision: main

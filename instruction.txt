@@ -1,1 +1,6 @@
+$ python3 -m venv .venv
+$ source ./.venv/bin/activate
+$ pip install -r requirements.txt
+$ export GITHUB_TOKEN=ghp_CHWL220nF5Em4DnaI6*********d0cldPG
 
+## TO FREEZE ENVIRONMENT

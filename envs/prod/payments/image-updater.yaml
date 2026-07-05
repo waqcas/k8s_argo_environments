@@ -9,13 +9,9 @@ spec:
     updateStrategy: semver
     forceUpdate: false
   writeBackConfig:
-    method: "git" 
+    method: git
   applicationRefs:
-    - namePattern: "payments-prod"
-      images:
-        - alias: "payments"
-          imageName: "683123961003.dkr.ecr.ap-south-1.amazonaws.com/payments:v0.1.x"
-          #commonUpdateSettings:
-             #ignoreTags: 
-                #- "*"
-
+  - namePattern: payments-prod
+    images:
+    - alias: payments
+      imageName: 683123961003.dkr.ecr.ap-south-1.amazonaws.com/payments:v0.1.x
